@@ -1,0 +1,30 @@
+name: 'Determine Update Priority'
+description: 'Determines a release update priority by comparing semantic version names'
+branding:
+  icon: 'info'
+  color: 'blue'
+inputs:
+  old-version:
+    description: 'The old semver release name (e.g. 1.0.0)'
+    required: true
+  new-version:
+    description: 'The new semver release name (e.g. 1.0.1)'
+    required: true
+  low-priority-result:
+    description: 'The output when the update is low priority (i.e. different patch version)'
+    required: false
+    default: '0'
+  med-priority-result:
+    description: 'The output when the update is med priority (i.e. different minor version)'
+    required: false
+    default: '3'
+  high-priority-result:
+    description: 'The output when the update is high priority (i.e. different major version)'
+    required: false
+    default: '5'
+outputs:
+  update-priority:
+    description: 'The priority of the new update. Will be one of the priority-result inputs'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'

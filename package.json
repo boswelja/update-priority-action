@@ -1,0 +1,30 @@
+{
+  "name": "update-priority-action",
+  "version": "0.1.0",
+  "description": "Determine the priority of an update by the change in semantic version name",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "ncc build src/main.js -o dist/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boswelja/update-priority-action.git"
+  },
+  "keywords": [
+    "action",
+    "semver"
+  ],
+  "author": "Jack Boswell (boswelja)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/boswelja/update-priority-action/issues"
+  },
+  "homepage": "https://github.com/boswelja/update-priority-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "semver": "^7.3.4"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.27.0"
+  }
+}

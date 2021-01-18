@@ -4,7 +4,7 @@
   "description": "Determine the priority of an update by the change in semantic version name",
   "main": "dist/index.js",
   "scripts": {
-    "build": "ncc build src/main.js -o dist/"
+    "build": "ncc build src/main.js -m -o dist/"
   },
   "repository": {
     "type": "git",

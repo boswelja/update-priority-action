@@ -1,6 +1,6 @@
 {
   "name": "update-priority-action",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Determine the priority of an update by the change in semantic version name",
   "main": "dist/index.js",
   "scripts": {

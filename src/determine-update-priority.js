@@ -41,6 +41,8 @@ export async function run() {
 
   if (!updatePriority) {
     warning('Versions are the same, no update required');
+  } else {
+    info(`Update priority is ${updatePriority}`);
   }
   setOutput('update-priority', updatePriority);
 }

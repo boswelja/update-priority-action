@@ -3396,7 +3396,7 @@ try {
 /***/ }),
 
 /***/ 4734:
-/***/ ((module, __webpack_exports__, __nccwpck_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __nccwpck_require__) => {
 
 "use strict";
 // ESM COMPAT FLAG
@@ -3450,17 +3450,16 @@ async function run() {
 
   if (!updatePriority) {
     (0,core.warning)('Versions are the same, no update required');
+  } else {
+    (0,core.info)(`Update priority is ${updatePriority}`);
   }
   (0,core.setOutput)('update-priority', updatePriority);
 }
 
 // CONCATENATED MODULE: ./src/main.js
-/* module decorator */ module = __nccwpck_require__.hmd(module);
 
 
-if (__nccwpck_require__.c[__nccwpck_require__.s] === module) {
-    run();
-}
+run();
 
 
 /***/ }),
@@ -3502,8 +3501,8 @@ module.exports = require("path");;
 /******/ 		}
 /******/ 		// Create a new module (and put it into the cache)
 /******/ 		var module = __webpack_module_cache__[moduleId] = {
-/******/ 			id: moduleId,
-/******/ 			loaded: false,
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
 /******/ 			exports: {}
 /******/ 		};
 /******/ 	
@@ -3516,32 +3515,11 @@ module.exports = require("path");;
 /******/ 			if(threw) delete __webpack_module_cache__[moduleId];
 /******/ 		}
 /******/ 	
-/******/ 		// Flag the module as loaded
-/******/ 		module.loaded = true;
-/******/ 	
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
 /******/ 	
-/******/ 	// expose the module cache
-/******/ 	__nccwpck_require__.c = __webpack_module_cache__;
-/******/ 	
 /************************************************************************/
-/******/ 	/* webpack/runtime/harmony module decorator */
-/******/ 	(() => {
-/******/ 		__nccwpck_require__.hmd = (module) => {
-/******/ 			module = Object.create(module);
-/******/ 			if (!module.children) module.children = [];
-/******/ 			Object.defineProperty(module, 'exports', {
-/******/ 				enumerable: true,
-/******/ 				set: () => {
-/******/ 					throw new Error('ES Modules may not assign module.exports or exports.*, Use ESM export syntax, instead: ' + module.id);
-/******/ 				}
-/******/ 			});
-/******/ 			return module;
-/******/ 		};
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
@@ -3556,9 +3534,9 @@ module.exports = require("path");;
 /******/ 	/* webpack/runtime/compat */
 /******/ 	
 /******/ 	__nccwpck_require__.ab = __dirname + "/";/************************************************************************/
-/******/ 	// module cache are used so entry inlining is disabled
+/******/ 	// module exports must be returned from runtime so entry inlining is disabled
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	return __nccwpck_require__(__nccwpck_require__.s = 4734);
+/******/ 	return __nccwpck_require__(4734);
 /******/ })()
 ;

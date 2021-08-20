@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/boswelja/update-priority-action#readme",
   "dependencies": {
-    "@actions/core": "^1.4.0",
+    "@actions/core": "^1.5.0",
     "semver": "^7.3.5"
   },
   "devDependencies": {

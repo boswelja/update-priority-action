@@ -25,6 +25,6 @@
     "semver": "^7.3.7"
   },
   "devDependencies": {
-    "@vercel/ncc": "^0.33.4"
+    "@vercel/ncc": "^0.34.0"
   }
 }

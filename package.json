@@ -22,7 +22,7 @@
   "homepage": "https://github.com/boswelja/update-priority-action#readme",
   "dependencies": {
     "@actions/core": "^1.11.1",
-    "semver": "^7.7.0"
+    "semver": "^7.7.1"
   },
   "devDependencies": {
     "@vercel/ncc": "^0.38.3"
